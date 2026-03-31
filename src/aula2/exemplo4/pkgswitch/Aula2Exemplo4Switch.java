@@ -28,19 +28,17 @@ public class Aula2Exemplo4Switch {
 
         switch (controle) {
 
-            case 1:
+            case 1 -> {
                 resultado = numero1 + numero2;
                 JOptionPane.showMessageDialog(null, "O resultado é: " + resultado);
-                break;
+            }
 
-            case 2:
+            case 2 -> {
                 resultado = numero1 - numero2;
                 JOptionPane.showMessageDialog(null, "O resultado é: " + resultado);
-                break;
+            }
 
-            default:
-                JOptionPane.showMessageDialog(null, "Opção inválida!");
-                break;
+            default -> JOptionPane.showMessageDialog(null, "Opção inválida!");
         }
     }
 }
